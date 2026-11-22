@@ -1,8 +1,8 @@
-package lab6.validation;
+package validation;
 
-import lab6.annotations.FragileWeightLimit;
-import lab6.annotations.MatchesPattern;
-import lab6.annotations.NumericRange;
+import annotations.FragileWeightLimit;
+import annotations.MatchesPattern;
+import annotations.NumericRange;
 
 import java.lang.reflect.Field;
 import java.util.regex.Pattern;

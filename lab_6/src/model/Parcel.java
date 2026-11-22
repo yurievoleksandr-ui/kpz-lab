@@ -1,8 +1,8 @@
-package lab6.model;
+package model;
 
-import lab6.annotations.FragileWeightLimit;
-import lab6.annotations.MatchesPattern;
-import lab6.annotations.NumericRange;
+import annotations.FragileWeightLimit;
+import annotations.MatchesPattern;
+import annotations.NumericRange;
 
 import java.time.LocalDate;
 

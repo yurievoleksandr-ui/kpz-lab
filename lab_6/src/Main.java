@@ -1,13 +1,11 @@
-package lab6;
-
-import lab6.model.Parcel;
-import lab6.validation.ValidationResult;
-import lab6.validation.ValidatorService;
+import model.Parcel;
+import validation.ValidationResult;
+import validation.ValidatorService;
 
 import java.time.LocalDate;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         ValidatorService validator = new ValidatorService();
 
         Parcel valid = new Parcel("RA123456789UA", 3.2, true,
@@ -18,6 +16,12 @@ public class Main {
 
         print("Валідне відправлення", valid, validator.validate(valid));
         print("Невалідне відправлення", invalid, validator.validate(invalid));
+
+        // Завдання 3
+        // Benchmark.run();   // розкоментуйте, щоб запустити бенчмарк
+
+        // Завдання 4
+        ComponentEngine.run("components");
     }
 
     private static void print(String title, Object entity, ValidationResult result) {

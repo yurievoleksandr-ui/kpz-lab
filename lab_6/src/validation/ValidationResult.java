@@ -1,4 +1,4 @@
-package lab6.validation;
+package validation;
 
 import java.util.ArrayList;
 import java.util.Collections;
