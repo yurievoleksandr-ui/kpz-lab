@@ -1,0 +1,21 @@
+package lab6.validation;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class ValidationResult {
+    private final List<String> errors = new ArrayList<>();
+
+    public void addError(String fieldName, String message) {
+        errors.add(fieldName + ": " + message);
+    }
+
+    public boolean isValid() {
+        return errors.isEmpty();
+    }
+
+    public List<String> getErrors() {
+        return Collections.unmodifiableList(errors);
+    }
+}
